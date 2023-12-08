@@ -1,9 +1,9 @@
 {
-  "name": "hyperf",
-  "version": "1.0.0",
+  "name": "eonf",
+  "version": "1.0.1",
   "description": "A minimalist framework inspired by express",
   "main": "./dist/index.js",
-  "repository": "",
+  "repository": "https://github.com/RNatsuki/eonf",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "build": "tsc --outDir ./dist"
