@@ -1,17 +1,17 @@
 {
-  "name": "http-server",
+  "name": "hyperf",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "type": "commonjs",
+  "description": "A minimalist framework inspired by express",
+  "main": "./dist/index.js",
+  "repository": "",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "build": "tsc --outDir ./dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Rodrigo Ibarra",
+  "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.0.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.2"
   }

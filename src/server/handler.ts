@@ -12,10 +12,12 @@ export class Handler {
   ) {
     try {
       const request = this.processRequest(req);
-
+      
+      
       const response = request.getRoute()?.getAction()(request, new Response());
+      console.log(response);
+      
       this.sendResponse(res, response as Response);
-
     } catch (error: any) {
       if (error instanceof HttpNotFoundException) {
         res.writeHead(404, { "Content-Type": "text/plain" });
@@ -30,8 +32,8 @@ export class Handler {
     request.setMethod(req.method as HttpMethod);
     request.setUri(req.url as string);
     request.setRoute(Router.resolve(request));
-    request.params = Router.extractParams(request)
-    
+    request.params = Router.extractParams(request);
+
     return request;
   }
 
