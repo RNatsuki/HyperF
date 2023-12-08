@@ -1,8 +1,9 @@
 {
-  "name": "eonf",
-  "version": "1.0.1",
+  "name": "@rnatsuki/eonf",
+  "version": "1.0.3",
   "description": "A minimalist framework inspired by express",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
+  
   "repository": "https://github.com/RNatsuki/eonf",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
